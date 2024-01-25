@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick Slider cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+   <main>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.jpg" alt="Logo" width="100" height="80" class="logo-image">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="profile-section" id="profile">
+      <div class="container">
+        <div class="row align-items-center justigy-content-center">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="profile-image-wrapper ">
+              <img src="assets/about-me.jpeg" alt="Profile Picture" height="300" width="400" class="img-fluid profile-pic">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Shilpa Kalarikkal</h1>
+              <p class="section__text__p2">Frontend Developer</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/shilpa-resume-latest.pdf')"
+                >
+                  Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/shilpa-kalarikkal-81a7a41b4/'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <div class="container">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title text-center">About Me</h1>
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <div class="section__pic-container">
+              <img
+                src="./assets/code.jpg"
+                alt="Profile picture"
+                class="about-pic img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-details-container">
+              <div class="about-containers flex-column flex-md-row">
+                <div class="details-container">
+                  <img
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <h3>Experience</h3>
+                  <p>1.6 years <br />Frontend Developer</p>
+                </div>
+                <div class="details-container">
+                  <img
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                  />
+                  <h3>Education</h3>
+                  <p>B.Sc.IT Bachelors Degree<br />M.Sc.IT Masters Degree</p>
+                </div>
+              </div>
+              <div class="text-container py-3">
+                <p>
+                  Hey there! 👋  I'm a passionate frontend developer with 1.6 years of hands-on experience in creating interactive and user-friendly web applications. My journey in the world of web development has been an exciting adventure where I've honed my skills and embraced new technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title text-center">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Developer</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SASS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ReactJs</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Bootstrap</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>GIT</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JQUERY</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AJAX</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Laravel</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience-section py-5" id="experience">
+      <div class="container">
+        <p class="section__text__p1">Check Into My</p>
+        <h1 class="title text-center pb-4">Work Experience</h1>
+        <div class="experience-wrapper">
+            <div class="experience-card">
+              <p><strong>Company Name : </strong><span><img src="/portfolio/assets/tg_logo.png" alt="company logo" height="20" width="25"></span> Tantragyan Technologies Pvt Ltd.</p>
+              <p><strong>Designation : </strong>Associate  Software Solution Engineer</p>
+              <p class="time-period"><strong>Duration : </strong>August 2022 - Present</p>
+              <p><strong>Responsibilities :</strong></p>
+              <ul>
+                <li>
+                  DEVELOPED INTERACTIVE FRONTEND SOLUTIONS WITH API-CENTRIC-WEB-APPLICATIONS,LEVERAGING HTML5,CSS3,JAVASCRIPT,OPTIMIZING AND AUTOMATING PROCESSES,AND INCREASING SPEED OF RESPONSE & DATA ACCURACY BY 70%.
+                </li>
+                <li>
+                  ACHIEVED 80% DECREASE IN DEVELOPMENT CYCLE TIME,ORGANISED & IMPLEMENTED BEST PRACTICES ,DEPLOYED PROJECTS TO PRODUCTION .
+                  PROFICIENT IN HTML, CSS,JAVASCRIPT etc
+                </li>
+                <li>
+                  DEVELOPED RESPONSIVE WEB-BASED UI FOR MULTIPLE CLIENTS (UPL , DECCO , ADVANTA , 12GRIDS ,UPL HERO WEBSITES etc).
+                </li>
+                <li>
+                  REVAMPED UI LAYOUTS UTILISING SASS,BOOTSTRAP & CSS GRID SYSTEM,OPTIMIZED USER EXPERIENCE RESULTING IN A INCREASE IN CONVERSION RATES & 20% DECREASE IN PAGE LOAD TIME.
+                </li>
+                <li>
+                  WORK CLOSELY WITH DESIGN, PRODUCT MANAGEMENT, AND DEVELOPMENT TEAMS TO CREATE ELEGANT, USABLE, RESPONSIVE AND INTERACTIVE INTERFACES ACROSS MULTIPLE DEVICES.
+                </li>
+                <li> 
+                  TURNING UI/UX DESIGNS INTO PROTOTYPES, CREATING EXCELLENT INTERACTIONS FROM DESIGNS, WRITING REUSABLE CONTENT MODULES MAINTAINABILITY OF THE CODE.
+                </li>
+                <li>
+                  IMPLEMENT UI DEVELOPMENT PRINCIPLES TO ENSURE THAT THE PRODUCT CLIENT-SIDE SERVES AT SCALE.
+                </li>
+                <li>
+                  REVIEW AND OPTIMIZE THE APP USAGE BY MONITORING KEY METRICS AND RECTIFYING THE ISSUES PROACTIVELY.
+                </li>
+                <li>
+                  PROFICIENT WITH JAVASCRIPT FRAMEWORKS SUCH AS JQUERY & REACT.
+                  PROFICIENT WITH AJAX CALLS , API INTEGRATION, REST API’s.
+                </li>
+                <li>
+                  FAMILIARITY WITH BROWSER TESTING AND DEBUGGING
+                  IN-DEPTH UNDERSTANDING OF THE ENTIRE WEB DEVELOPMENT PROCESS (DESIGN, DEVELOPMENT AND DEPLOYMENT)
+                </li>
+                <li>
+                  KNOWLEDGE OF SEO PRINCIPLES ,PHP LARAVEL FRAMEWORK
+                </li>
+                <li>
+                  FAMILIARITY WITH SOFTWARE LIKE ADOBE XD, FIGMA, GITHUB, GITLAB.
+                </li>
+              </ul>
+            </div>
+            <div class="experience-card">
+              <p><strong>Company Name : </strong><span><img src="/portfolio/assets/prdxn_logo.jpg" alt="company logo" height="20" width="25"></span> Axioned</p>
+              <p><strong>Designation : </strong>Web Developer Trainee</p>
+              <p class="time-period"><strong>Duration : </strong>April 2022 - July 2022</p>
+              <p><strong>Responsibilities :</strong></p>
+              <ul>
+                <li>
+                  DEVELOPING NEW USER-FACING FEATURES.
+
+                </li>
+                <li>
+                  ATTENDING SEMINARS & WEBINARS ON WEB TECHNOLOGIES TO UPGRADE MY FRONTEND SKILLS.
+                </li>
+                <li>
+                  ALSO , COMPLETE SOME COMPANY SUGGESTED COURSES FOR BETTER UNDERSTANDING OF TECHNOLOGIES.
+                </li>
+                <li>
+                  WRITE APPLICATION INTERFACE CODE WITH JAVASCRIPT.
+                </li>
+                <li>
+                  TO CREATE RESPONSIVE WEB PAGES USING HTML , CSS , JAVA SCRIPT & AJAX.
+                </li>
+                <li>
+                  TRANSLATING DESIGNS AND WIREFRAMES INTO HIGH QUALITY CODE.
+                </li>
+                <li> 
+                  ENHANCE APPLICATION PERFORMANCE WITH CONSTANT MONITORING.
+                </li>
+                <li>
+                  OPTIMIZE COMPONENTS TO WORK SEAMLESSLY ACROSS DIFFERENT BROWSERS AND DEVICES
+                </li>
+                <li>
+                  CONSTANT INTERACTION WITH OTHER DEVELOPER TEAMS AND DESIGN TEAM TO DISCUSS UI IDEAS.
+                  A THOROUGH REVIEW OF APPLICATIONS NEEDS AND INTERFACING ELEMENTS 
+                  FOLLOW PROPER DOCUMENTATION FOR CHANGES IN APPLICATION AND FURTHER UPDATE.
+                </li>
+                
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="project-section py-5" id="projects">
+      <div class="container">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title text-center">Projects</h1>
+        <div class="project-card-container pt-4">
+          <div class="card">
+            <img src="assets/upl.webp" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">UPL Heroes Website</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML, Sass,Bootstrap, Javascript,jQuery,Ajax,Laravel</p>
+              <p class="card-desc"><strong>Description :</strong> As the Frontend Developer for Heroes website, I crafted a captivating narrative about global farmers and UPL supplements, seamlessly integrating APIs and optimizing images for an immersive user experience. Proficient in HTML, Sass, jQuery, and Laravel, I demonstrated technical prowess while showcasing the success stories of farmers through innovative web solutions.</p>
+              <a href="https://heroes.upl-ltd.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/decco.jpg" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Decco Website</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML, Sass,Bootstrap, Javascript,jQuery,Ajax,Laravel</p>
+              <p class="card-desc"><strong>Description :</strong> As a web developer, I crafted DECCO's website, showcasing their specialized services in construction, maintenance, critical equipment handling, and fabrication for esteemed clients in biopharmaceuticals, technology, and industry. The website embodies DECCO's expertise and commitment, offering</p>
+              <a href="https://heroes.upl-ltd.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/projects-1.jpg" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Advanta Website</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML, Sass,Bootstrap, Javascript,jQuery,Ajax,Laravel</p>
+              <p class="card-desc"><strong>Description :</strong>As the web developer for Advanta, I designed and developed a dynamic website highlighting the company's leadership in seed development for climate-smart and high-nutrition crops. The site delivers a seamless user experience, showcasing Advanta's commitment to innovative and sustainable agriculture practices.</p>
+              <a href="https://www.advantaseeds.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/akyapak-1.png" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Laser Technologies (Akyapak)</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML, Sass,Bootstrap, Javascript,jQuery,Ajax,Laravel</p>
+              <p class="card-desc"><strong>Description :</strong> As the web developer for the Laser Technology website, I spearheaded the creation of distinct web pages showcasing Akyapak products. My contributions ensure a seamless and informative user experience, highlighting Akyapak's cutting-edge solutions in the field of laser technology.</p>
+              <a href="https://heroes.upl-ltd.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/huestorm.png" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Huestorm Design Website</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML, Sass,Bootstrap, Javascript,jQuery,Ajax,Laravel</p>
+              <p class="card-desc"><strong>Description :</strong> As the lead web developer, I transformed Huestorm Design's online presence through a comprehensive website overhaul. Leveraging design as a catalyst for innovation and impact, the revamped site now reflects the company's commitment to integrated brand and marketing communication design, offering a visually compelling and user-centric experience.</p>
+              <a href="https://huestorm.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Logo.svg" class="card-img-top" alt="Project logo" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Restaurant Landing Page</h5>
+              <p class="card-text"><strong>Role :</strong> Web Developer</p>
+              <p><strong>Technologies :</strong> HTML,CSS,React</p>
+              <p class="card-desc"><strong>Description :</strong> As a React developer, I created an engaging restaurant landing page for a dummy project. Leveraging React's dynamic components and smooth transitions, the page features an appealing design, interactive menu sections, and responsive layouts, offering users a delightful preview of the restaurant's offerings in a modern and user-friendly format</p>
+              <a href="https://huestorm.com/" class="btn btn-primary view-btn">View Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section py-5" id="contacts">
+      <div class="container">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title text-center">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:rajanshilpa657@gmail.com" class="email-id">rajanshilpa657@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/mobile-solid.svg"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:+918879047560" class="contact-no">+91-8879047560</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links d-flex list-unstyled justify-content-center flex-wrap">
+            <li><a href="#about" class="text-decoration-none footer-links">About</a></li>
+            <li><a href="#skills" class="text-decoration-none footer-links">Skills</a></li>
+            <li><a href="#experience" class="text-decoration-none footer-links">Experience</a></li>
+            <li><a href="#projects" class="text-decoration-none footer-links">Projects</a></li>
+            <li><a href="#contact" class="text-decoration-none footer-links">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="text-center">Copyright &#169; 2024 Shilpa Kalarikkal. All Rights Reserved.</p>
+    </footer>
+   </main>
+   <script src="script.js"></script>
+  </body>
+</html>
